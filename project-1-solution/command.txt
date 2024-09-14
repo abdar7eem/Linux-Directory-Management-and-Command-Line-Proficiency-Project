@@ -1,0 +1,88 @@
+AbdAl-rheem yaseen
+********************
+Qustion 1 answer:
+------
+mkdir u1220783_prj1
+touch u1220783_prj1/command.txt
+mkdir u1220783_prj1/mydir
+mkdir u1220783_prj1/firstSemester
+------
+mkdir u1220783_prj1/mydir/mp3
+touch u1220783_prj1/mydir/Mp3_list.txt
+mkdir -p u1220783_prj1/mydir/info/presonal
+touch u1220783_prj1/mydir/info/personal/myInfo.txt
+touch u1220783_prj1/mydir/info/personal/best_palaces.txt
+mkdir u1220783_prj1/mydir/moves
+touch u1220783_prj1/mydir/moves/moves_list.txt
+------
+mkdir -p  u1220783_proj1/firstSemester/myData/courses/comp2311
+mkdir u1220783_proj1/firstSemester/myData/courses/comp233
+mkdir u1220783_proj1/firstSemester/myData/courses/comp242
+touch u1220783_proj1/firstSemester/myData/My_Schedule.txt
+------
+mkdir -p u1220783_proj1/firstSemester/myDocuments/f2024/java
+touch u1220783_proj1/firstSemester/myDocuments/f2024/java/projects
+touch u1220783_proj1/firstSemester/myDocuments/f2024/java/practical
+mkdir u1220783_proj1/firstSemester/myDocuments/f2024/linux
+touch u1220783_proj1/firstSemester/myDocuments/f2024/linux/final
+********************
+Qustion 2 answer:
+------
+1-(in extended command mode) :! map H ^[G$4db]
+------
+2-(in extended command mode) :map W ^[GK8GP]
+********************
+Qustion 3 answer:
+------
+1-
+cd u1220783_prj1/mydir/personal
+ln myInfo.txt ../../../firstSemster/myDocuments/linkmyInfo
+------
+2-
+cd u1220783_prj1/firstSemster/myDocuments
+ln -s ../myData/courses link_courses
+------
+The differene is :
+The first is a hard link between two files
+while in second we use hard link because the soft link is not allaowd for files
+******************
+Qustion 4 answer:
+vi u1220783_prj1/mydir/info/personal/best_palaces.txt
+******************
+Qustion 5 answer:  
+------
+A-G$
+B-3G
+C-5Gyk
+D-2db
+E-1G2ddGP
+*****************
+Qustion 6 answer:
+ls -d /etc/[hj][aeiou]*
+****************
+Qustion 7 answer:
+------
+cd
+cp -r u1220783_prj1/firstSemester/myDocuments/f2024/java/{projects,practical}  u1220783_prj1/firstSemester/myData/courses/comp2311
+****************
+Question 8:
+------
+cd u1220784_prj1/firstSemester/myData/courses
+mkdir comp242/Queue
+rmdir Queue
+*Error Because rmdir can`t delete empty file*
+the soluotin is to use rm -r com242
+***************
+Question 9:
+cd 
+cd u1220783_prj1/firstSemseter/myDocuments/f2024
+chmod 660 linux
+***************
+Question 10:
+umask 360
+umask 247
+umask 346
+**************
+Question 11:
+stat myInfo.txt
+" behinde change we can find the last date and time when the permission.txt changed "
